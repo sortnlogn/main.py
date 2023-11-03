@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block body %}
+     <div class="col-md-3 text-end">
+         <button type="button" class="btn btn-warning" onClick="location.href='/upload'">Загрузка файла</button>
+         <button type="button" class="btn btn-warning" onClick="location.href='/query'">Запросы</button>
+         <button type="button" class="btn btn-warning" onClick="location.href='/add_teacher'">Создать нового преподавателя</button>
+         <button type="button" class="btn btn-warning" onClick="location.href='/add_load'">Назначить нагрузку</button>
+         <button type="button" class="btn btn-warning" onClick="location.href='/view_load'">Посмотреть всех преподавателей со ставками</button>
+     </div>
+{% endblock %}

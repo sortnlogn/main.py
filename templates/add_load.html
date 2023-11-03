@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1>Добавление нагрузки для преподавателя:</h1>
+    <form method="POST" action="/add_load">
+        <label for="family">Фамилия:</label>
+        <input type="text" id="family" name="family">
+        <br><br>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="otch">Отчество:</label>
+        <input type="text" id="otch" name="otch">
+        <br><br>
+        <label for="subj">Предмет</label>
+        <input type="text" id="subj" name="subj">
+        <br><br>
+        <label for="group">Группа</label>
+        <input type="text" id="group" name="group">
+        <br><br>
+        <label for="lab">Лабораторные работы(да/нет):</label>
+        <input type="text" id="lab" name="lab">
+        <br><br>
+        <label for="lection">Лекции (да/нет):</label>
+        <input type="text" id="lection" name="lection">
+        <br><br>
+        <label for="practice">Практики (да/нет)</label>
+        <input type="text" id="practice" name="practice">
+        <br><br>
+        <input type="hidden" name="query_type" value="add_load">
+        <input type="submit" value="Добавить нагрузку">
+    </form>
+ {% endblock %}

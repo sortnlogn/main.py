@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block body %}
+ <h1>Результат запроса "{{ query_type }}":</h1>
+    <table>
+       <thead>
+            <tr>
+                {% for key in names %}
+                <th>{{ key }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        {% for row in data %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

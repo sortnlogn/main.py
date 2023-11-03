@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <h1>Выберите тип запроса:</h1>
+    <form method="POST" action="/query">
+        <label for="query_type">Тип запроса:</label>
+        <select id="query_type" name="query_type">
+            <option value="semester">По семестрам</option>
+            <option value="course">По курсам</option>
+            <option value="group">По группам</option>
+            <option value="teachers">Список преподавателей</option>
+        </select>
+        <br><br>
+        <label for="query_text">Текст запроса:</label>
+        <input type="text" id="query_text" name="query_text">
+        <br><br>
+        <input type="submit" value="Отправить">
+    </form>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1>Добавление нового преподавателя:</h1>
+    <form method="POST" action="/add_teacher">
+        <label for="family">Фамилия:</label>
+        <input type="text" id="family" name="family">
+        <br><br>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="otch">Отчество:</label>
+        <input type="text" id="otch" name="otch">
+        <br><br>
+        <label for="workload_share">Доля ставки:</label>
+        <input type="text" id="workload_share" name="workload_share">
+        <br><br>
+        <label for="scientific_degree">Ученая степень:</label>
+        <input type="text" id="scientific_degree" name="scientific_degree">
+        <br><br>
+        <label for="scientific_title">Ученое звание:</label>
+        <input type="text" id="scientific_title" name="scientific_title">
+        <br><br>
+        <label for="position">Должность:</label>
+        <input type="text" id="position" name="position">
+        <br><br>
+        <label for="recruitment_conditions">Условия привлечения:</label>
+        <input type="text" id="recruitment_conditions" name="recruitment_conditions">
+        <br><br>
+        <input type="hidden" name="query_type" value="add_teacher">
+        <input type="submit" value="Добавить преподавателя">
+    </form>
+ {% endblock %}
